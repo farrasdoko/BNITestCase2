@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Promo {
-    var id: String
+struct Promo: Codable {
+    var id: Int
     var nama: String
 }

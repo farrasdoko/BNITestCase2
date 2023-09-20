@@ -8,5 +8,5 @@
 import Foundation
 
 protocol MainClient {
-    func fetchPromo(completion: ([Promo]) -> Void)
+    func fetchPromo(completion: @escaping ([Promo]) -> Void)
 }
