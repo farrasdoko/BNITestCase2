@@ -44,7 +44,7 @@ struct SuccessMainClientStub: MainClient {
     func fetchPromo(completion: ([Promo]) -> Void) {
         var promos: [Promo] = []
         for i in 0..<10 {
-            let promo = Promo(id: "\(i)", nama: "Test Promo")
+            let promo = Promo(id: i, nama: "Test Promo", desc: "Description will be here.")
             promos.append(promo)
         }
         completion(promos)
