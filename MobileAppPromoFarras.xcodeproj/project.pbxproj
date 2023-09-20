@@ -14,19 +14,10 @@
 		EDD76CA72ABADBC8007BA34E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDD76CA62ABADBC8007BA34E /* Assets.xcassets */; };
 		EDD76CAA2ABADBC8007BA34E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDD76CA82ABADBC8007BA34E /* LaunchScreen.storyboard */; };
 		EDD76CB52ABADBC9007BA34E /* MobileAppPromoFarrasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD76CB42ABADBC9007BA34E /* MobileAppPromoFarrasTests.swift */; };
-		EDD76CBF2ABADBC9007BA34E /* MobileAppPromoFarrasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD76CBE2ABADBC9007BA34E /* MobileAppPromoFarrasUITests.swift */; };
-		EDD76CC12ABADBC9007BA34E /* MobileAppPromoFarrasUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD76CC02ABADBC9007BA34E /* MobileAppPromoFarrasUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		EDD76CB12ABADBC9007BA34E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EDD76C922ABADBC6007BA34E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EDD76C992ABADBC6007BA34E;
-			remoteInfo = MobileAppPromoFarras;
-		};
-		EDD76CBB2ABADBC9007BA34E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = EDD76C922ABADBC6007BA34E /* Project object */;
 			proxyType = 1;
@@ -46,9 +37,6 @@
 		EDD76CAB2ABADBC8007BA34E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDD76CB02ABADBC9007BA34E /* MobileAppPromoFarrasTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobileAppPromoFarrasTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDD76CB42ABADBC9007BA34E /* MobileAppPromoFarrasTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileAppPromoFarrasTests.swift; sourceTree = "<group>"; };
-		EDD76CBA2ABADBC9007BA34E /* MobileAppPromoFarrasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobileAppPromoFarrasUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EDD76CBE2ABADBC9007BA34E /* MobileAppPromoFarrasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileAppPromoFarrasUITests.swift; sourceTree = "<group>"; };
-		EDD76CC02ABADBC9007BA34E /* MobileAppPromoFarrasUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileAppPromoFarrasUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,13 +54,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EDD76CB72ABADBC9007BA34E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -81,7 +62,6 @@
 			children = (
 				EDD76C9C2ABADBC6007BA34E /* MobileAppPromoFarras */,
 				EDD76CB32ABADBC9007BA34E /* MobileAppPromoFarrasTests */,
-				EDD76CBD2ABADBC9007BA34E /* MobileAppPromoFarrasUITests */,
 				EDD76C9B2ABADBC6007BA34E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,7 +71,6 @@
 			children = (
 				EDD76C9A2ABADBC6007BA34E /* MobileAppPromoFarras.app */,
 				EDD76CB02ABADBC9007BA34E /* MobileAppPromoFarrasTests.xctest */,
-				EDD76CBA2ABADBC9007BA34E /* MobileAppPromoFarrasUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -116,15 +95,6 @@
 				EDD76CB42ABADBC9007BA34E /* MobileAppPromoFarrasTests.swift */,
 			);
 			path = MobileAppPromoFarrasTests;
-			sourceTree = "<group>";
-		};
-		EDD76CBD2ABADBC9007BA34E /* MobileAppPromoFarrasUITests */ = {
-			isa = PBXGroup;
-			children = (
-				EDD76CBE2ABADBC9007BA34E /* MobileAppPromoFarrasUITests.swift */,
-				EDD76CC02ABADBC9007BA34E /* MobileAppPromoFarrasUITestsLaunchTests.swift */,
-			);
-			path = MobileAppPromoFarrasUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,24 +135,6 @@
 			productReference = EDD76CB02ABADBC9007BA34E /* MobileAppPromoFarrasTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		EDD76CB92ABADBC9007BA34E /* MobileAppPromoFarrasUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = EDD76CCA2ABADBC9007BA34E /* Build configuration list for PBXNativeTarget "MobileAppPromoFarrasUITests" */;
-			buildPhases = (
-				EDD76CB62ABADBC9007BA34E /* Sources */,
-				EDD76CB72ABADBC9007BA34E /* Frameworks */,
-				EDD76CB82ABADBC9007BA34E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				EDD76CBC2ABADBC9007BA34E /* PBXTargetDependency */,
-			);
-			name = MobileAppPromoFarrasUITests;
-			productName = MobileAppPromoFarrasUITests;
-			productReference = EDD76CBA2ABADBC9007BA34E /* MobileAppPromoFarrasUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -197,10 +149,6 @@
 						CreatedOnToolsVersion = 14.3.1;
 					};
 					EDD76CAF2ABADBC9007BA34E = {
-						CreatedOnToolsVersion = 14.3.1;
-						TestTargetID = EDD76C992ABADBC6007BA34E;
-					};
-					EDD76CB92ABADBC9007BA34E = {
 						CreatedOnToolsVersion = 14.3.1;
 						TestTargetID = EDD76C992ABADBC6007BA34E;
 					};
@@ -221,7 +169,6 @@
 			targets = (
 				EDD76C992ABADBC6007BA34E /* MobileAppPromoFarras */,
 				EDD76CAF2ABADBC9007BA34E /* MobileAppPromoFarrasTests */,
-				EDD76CB92ABADBC9007BA34E /* MobileAppPromoFarrasUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -238,13 +185,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		EDD76CAE2ABADBC9007BA34E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EDD76CB82ABADBC9007BA34E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -272,15 +212,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EDD76CB62ABADBC9007BA34E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EDD76CBF2ABADBC9007BA34E /* MobileAppPromoFarrasUITests.swift in Sources */,
-				EDD76CC12ABADBC9007BA34E /* MobileAppPromoFarrasUITestsLaunchTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -288,11 +219,6 @@
 			isa = PBXTargetDependency;
 			target = EDD76C992ABADBC6007BA34E /* MobileAppPromoFarras */;
 			targetProxy = EDD76CB12ABADBC9007BA34E /* PBXContainerItemProxy */;
-		};
-		EDD76CBC2ABADBC9007BA34E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = EDD76C992ABADBC6007BA34E /* MobileAppPromoFarras */;
-			targetProxy = EDD76CBB2ABADBC9007BA34E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -522,40 +448,6 @@
 			};
 			name = Release;
 		};
-		EDD76CCB2ABADBC9007BA34E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.farras.MobileAppPromoFarrasUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = MobileAppPromoFarras;
-			};
-			name = Debug;
-		};
-		EDD76CCC2ABADBC9007BA34E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.farras.MobileAppPromoFarrasUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = MobileAppPromoFarras;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -582,15 +474,6 @@
 			buildConfigurations = (
 				EDD76CC82ABADBC9007BA34E /* Debug */,
 				EDD76CC92ABADBC9007BA34E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		EDD76CCA2ABADBC9007BA34E /* Build configuration list for PBXNativeTarget "MobileAppPromoFarrasUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EDD76CCB2ABADBC9007BA34E /* Debug */,
-				EDD76CCC2ABADBC9007BA34E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
