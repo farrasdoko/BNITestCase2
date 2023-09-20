@@ -8,6 +8,7 @@
 import Foundation
 
 struct Promo: Codable {
-    var id: Int
-    var nama: String
+    let id: Int
+    let nama: String
+    let desc: String
 }
