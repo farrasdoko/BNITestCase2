@@ -40,10 +40,6 @@ final class MobileAppPromoFarrasTests: XCTestCase {
     
 }
 
-protocol MainClient {
-    func fetchPromo(completion: ([Promo]) -> Void)
-}
-
 struct SuccessMainClientStub: MainClient {
     func fetchPromo(completion: ([Promo]) -> Void) {
         var promos: [Promo] = []
@@ -59,33 +55,5 @@ struct FailedMainClientStub: MainClient {
     func fetchPromo(completion: ([Promo]) -> Void) {
         let promos: [Promo] = []
         completion(promos)
-    }
-}
-
-struct Promo {
-    var id: String
-    var nama: String
-}
-
-class MainVC: UIViewController {
-    var promosData: [Promo] = []
-    
-    var client: MainClient
-    
-    init(client: MainClient) {
-        self.client = client
-        super.init(nibName: nil, bundle: nil)
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        client.fetchPromo { [weak self] promos in
-            self?.promosData = promos
-        }
     }
 }
