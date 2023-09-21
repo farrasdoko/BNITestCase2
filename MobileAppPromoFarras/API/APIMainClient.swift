@@ -12,17 +12,21 @@ struct APIMainClient: MainClient {
         guard let apiUrl = URL(string: "https://content.digi46.id/promos") else { return }
         
         let session = URLSession.shared
-        let task = session.dataTask(with: apiUrl) { (data, response, error) in
-            if let error = error {
-                print("Error fetching promo: \(error)")
-                completion([])
-            } else if let data = data {
-                handlePromoData(data: data, completion: completion)
-            } else {
-                completion([])
+        DispatchQueue.global().async {
+            let task = session.dataTask(with: apiUrl) { (data, response, error) in
+                DispatchQueue.main.async {
+                    if let error = error {
+                        print("Error fetching promo: \(error)")
+                        completion([])
+                    } else if let data = data {
+                        handlePromoData(data: data, completion: completion)
+                    } else {
+                        completion([])
+                    }
+                }
             }
+            task.resume()
         }
-        task.resume()
     }
     func handlePromoData(data: Data, completion: ([Promo]) -> Void) {
         do {
