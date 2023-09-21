@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class MainVC: UIViewController {
     
@@ -57,7 +58,7 @@ extension MainVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: PromoCell.reuseIdentifier) as! PromoCell
         
-        cell.imgBannerView.image = UIImage(named: "promo_bni_point_plus_januari_2021_small_1fb82bf7c6")
+        cell.imgBannerView.kf.setImage(with: URL(string: promosData[indexPath.row].img.url))
         
         return cell
     }

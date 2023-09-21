@@ -11,4 +11,9 @@ struct Promo: Codable {
     let id: Int
     let nama: String
     let desc: String
+    let img: PromoImg
+}
+
+struct PromoImg: Codable {
+    let url: String
 }

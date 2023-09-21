@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25901290ACE000BDF4F96640 /* Pods_MobileAppPromoFarras.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCF14CEFF9BC71B4AC2BAA5B /* Pods_MobileAppPromoFarras.framework */; };
+		38D7A13C11D94D744683148B /* Pods_MobileAppPromoFarrasTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66F7C730996C77B9545B60ED /* Pods_MobileAppPromoFarrasTests.framework */; };
 		EDD76C9E2ABADBC6007BA34E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD76C9D2ABADBC6007BA34E /* AppDelegate.swift */; };
 		EDD76CA02ABADBC6007BA34E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD76C9F2ABADBC6007BA34E /* SceneDelegate.swift */; };
 		EDD76CA22ABADBC6007BA34E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD76CA12ABADBC6007BA34E /* ViewController.swift */; };
@@ -32,6 +34,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E3DDCC5F1AD81AC13BF6B9B /* Pods-MobileAppPromoFarrasTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileAppPromoFarrasTests.release.xcconfig"; path = "Target Support Files/Pods-MobileAppPromoFarrasTests/Pods-MobileAppPromoFarrasTests.release.xcconfig"; sourceTree = "<group>"; };
+		4B067A6C04D2A28CA0ABAF9E /* Pods-MobileAppPromoFarras.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileAppPromoFarras.debug.xcconfig"; path = "Target Support Files/Pods-MobileAppPromoFarras/Pods-MobileAppPromoFarras.debug.xcconfig"; sourceTree = "<group>"; };
+		54A9063D586F981E018EF063 /* Pods-MobileAppPromoFarras.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileAppPromoFarras.release.xcconfig"; path = "Target Support Files/Pods-MobileAppPromoFarras/Pods-MobileAppPromoFarras.release.xcconfig"; sourceTree = "<group>"; };
+		66F7C730996C77B9545B60ED /* Pods_MobileAppPromoFarrasTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobileAppPromoFarrasTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FF8E04BA34F12528813875D /* Pods-MobileAppPromoFarrasTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileAppPromoFarrasTests.debug.xcconfig"; path = "Target Support Files/Pods-MobileAppPromoFarrasTests/Pods-MobileAppPromoFarrasTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CCF14CEFF9BC71B4AC2BAA5B /* Pods_MobileAppPromoFarras.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobileAppPromoFarras.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDD76C9A2ABADBC6007BA34E /* MobileAppPromoFarras.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileAppPromoFarras.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDD76C9D2ABADBC6007BA34E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDD76C9F2ABADBC6007BA34E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25901290ACE000BDF4F96640 /* Pods_MobileAppPromoFarras.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,18 +70,42 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38D7A13C11D94D744683148B /* Pods_MobileAppPromoFarrasTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		594394F25E25B01FDE23B61D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CCF14CEFF9BC71B4AC2BAA5B /* Pods_MobileAppPromoFarras.framework */,
+				66F7C730996C77B9545B60ED /* Pods_MobileAppPromoFarrasTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A830A2355AA163622A0EDA77 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4B067A6C04D2A28CA0ABAF9E /* Pods-MobileAppPromoFarras.debug.xcconfig */,
+				54A9063D586F981E018EF063 /* Pods-MobileAppPromoFarras.release.xcconfig */,
+				7FF8E04BA34F12528813875D /* Pods-MobileAppPromoFarrasTests.debug.xcconfig */,
+				2E3DDCC5F1AD81AC13BF6B9B /* Pods-MobileAppPromoFarrasTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		EDD76C912ABADBC6007BA34E = {
 			isa = PBXGroup;
 			children = (
 				EDD76C9C2ABADBC6007BA34E /* MobileAppPromoFarras */,
 				EDD76CB32ABADBC9007BA34E /* MobileAppPromoFarrasTests */,
 				EDD76C9B2ABADBC6007BA34E /* Products */,
+				A830A2355AA163622A0EDA77 /* Pods */,
+				594394F25E25B01FDE23B61D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,9 +168,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EDD76CC42ABADBC9007BA34E /* Build configuration list for PBXNativeTarget "MobileAppPromoFarras" */;
 			buildPhases = (
+				827CD9A6BB67774A843D585F /* [CP] Check Pods Manifest.lock */,
 				EDD76C962ABADBC6007BA34E /* Sources */,
 				EDD76C972ABADBC6007BA34E /* Frameworks */,
 				EDD76C982ABADBC6007BA34E /* Resources */,
+				546399B0D303D05D327228C1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +187,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EDD76CC72ABADBC9007BA34E /* Build configuration list for PBXNativeTarget "MobileAppPromoFarrasTests" */;
 			buildPhases = (
+				AF0C1C2D0420754040AB394D /* [CP] Check Pods Manifest.lock */,
 				EDD76CAC2ABADBC9007BA34E /* Sources */,
 				EDD76CAD2ABADBC9007BA34E /* Frameworks */,
 				EDD76CAE2ABADBC9007BA34E /* Resources */,
@@ -223,6 +259,70 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		546399B0D303D05D327228C1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MobileAppPromoFarras/Pods-MobileAppPromoFarras-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MobileAppPromoFarras/Pods-MobileAppPromoFarras-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MobileAppPromoFarras/Pods-MobileAppPromoFarras-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		827CD9A6BB67774A843D585F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MobileAppPromoFarras-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF0C1C2D0420754040AB394D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MobileAppPromoFarrasTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EDD76C962ABADBC6007BA34E /* Sources */ = {
@@ -394,6 +494,7 @@
 		};
 		EDD76CC52ABADBC9007BA34E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B067A6C04D2A28CA0ABAF9E /* Pods-MobileAppPromoFarras.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -421,6 +522,7 @@
 		};
 		EDD76CC62ABADBC9007BA34E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54A9063D586F981E018EF063 /* Pods-MobileAppPromoFarras.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -448,6 +550,7 @@
 		};
 		EDD76CC82ABADBC9007BA34E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FF8E04BA34F12528813875D /* Pods-MobileAppPromoFarrasTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -467,6 +570,7 @@
 		};
 		EDD76CC92ABADBC9007BA34E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E3DDCC5F1AD81AC13BF6B9B /* Pods-MobileAppPromoFarrasTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
