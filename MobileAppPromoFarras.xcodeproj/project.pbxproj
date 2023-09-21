@@ -21,6 +21,7 @@
 		EDD76CD32ABAF85B007BA34E /* Promo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD76CD22ABAF85B007BA34E /* Promo.swift */; };
 		EDD76CD62ABAF921007BA34E /* APIMainClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD76CD52ABAF921007BA34E /* APIMainClient.swift */; };
 		EDD76CD82ABBC562007BA34E /* PromoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD76CD72ABBC561007BA34E /* PromoCell.swift */; };
+		EDD76CDB2ABBCF1F007BA34E /* DetailVcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD76CDA2ABBCF1F007BA34E /* DetailVcTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		EDD76CD22ABAF85B007BA34E /* Promo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Promo.swift; sourceTree = "<group>"; };
 		EDD76CD52ABAF921007BA34E /* APIMainClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIMainClient.swift; sourceTree = "<group>"; };
 		EDD76CD72ABBC561007BA34E /* PromoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoCell.swift; sourceTree = "<group>"; };
+		EDD76CDA2ABBCF1F007BA34E /* DetailVcTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVcTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +96,6 @@
 				7FF8E04BA34F12528813875D /* Pods-MobileAppPromoFarrasTests.debug.xcconfig */,
 				2E3DDCC5F1AD81AC13BF6B9B /* Pods-MobileAppPromoFarrasTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -123,6 +124,7 @@
 			children = (
 				EDD76CD42ABAF915007BA34E /* API */,
 				EDD76CCD2ABAF305007BA34E /* MainVc */,
+				EDD76CD92ABBCEF5007BA34E /* DetailVc */,
 				EDD76C9D2ABADBC6007BA34E /* AppDelegate.swift */,
 				EDD76C9F2ABADBC6007BA34E /* SceneDelegate.swift */,
 				EDD76CA12ABADBC6007BA34E /* ViewController.swift */,
@@ -138,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				EDD76CB42ABADBC9007BA34E /* MobileAppPromoFarrasTests.swift */,
+				EDD76CDA2ABBCF1F007BA34E /* DetailVcTests.swift */,
 			);
 			path = MobileAppPromoFarrasTests;
 			sourceTree = "<group>";
@@ -159,6 +162,13 @@
 				EDD76CD52ABAF921007BA34E /* APIMainClient.swift */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		EDD76CD92ABBCEF5007BA34E /* DetailVc */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DetailVc;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -345,6 +355,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDD76CB52ABADBC9007BA34E /* MobileAppPromoFarrasTests.swift in Sources */,
+				EDD76CDB2ABBCF1F007BA34E /* DetailVcTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -44,7 +44,7 @@ struct SuccessMainClientStub: MainClient {
     func fetchPromo(completion: ([Promo]) -> Void) {
         var promos: [Promo] = []
         for i in 0..<10 {
-            let promo = Promo(id: i, nama: "Test Promo", desc: "Description will be here.")
+            let promo = Promo(id: i, nama: "Test Promo", desc: "Description will be here.", img: PromoImg(url: "https://strapi-jkt-digi46.s3.ap-southeast-3.amazonaws.com/bni_credit_card_banner_fitur_mbanking_small_b8d822ed1c.jpg"))
             promos.append(promo)
         }
         completion(promos)

@@ -7,7 +7,11 @@
 
 import Foundation
 
-struct Promo: Codable {
+struct Promo: Codable, Equatable {
+    static func == (lhs: Promo, rhs: Promo) -> Bool {
+        lhs.id == rhs.id
+    }
+    
     let id: Int
     let nama: String
     let desc: String
