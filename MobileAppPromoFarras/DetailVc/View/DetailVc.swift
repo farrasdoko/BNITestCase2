@@ -8,12 +8,22 @@
 import UIKit
 import Kingfisher
 
+protocol DetailViewProtocol: AnyObject {
+    var presenter: DetailPresenterProtocol? { get set }
+    
+    // MARK: Presenter to View
+    func setupData(with promo: Promo)
+}
+
 class DetailVc: UIViewController {
     
+    var presenter: DetailPresenterProtocol?
+    
     let imgView = UIImageView(frame: .zero)
+    let titleLabel = UILabel(frame: .zero)
+    let descLabel = UILabel(frame: .zero)
     
     let promo: Promo
-    
     init(_ promo: Promo) {
         self.promo = promo
         super.init(nibName: nil, bundle: nil)
@@ -27,6 +37,7 @@ class DetailVc: UIViewController {
         super.viewDidLoad()
 
         setupView()
+        presenter?.viewDidLoad(promo)
     }
     
     private func setupView() {
@@ -36,9 +47,6 @@ class DetailVc: UIViewController {
     }
     
     private func setupImageView() {
-        let imgUrl = URL(string: promo.img.url)
-        imgView.kf.setImage(with: imgUrl)
-        
         view.addSubview(imgView)
         imgView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
@@ -50,12 +58,8 @@ class DetailVc: UIViewController {
     }
     
     private func setupLabelView() {
-        let titleLabel = UILabel(frame: .zero)
-        titleLabel.text = promo.nama
         titleLabel.font = .systemFont(ofSize: 20, weight: .bold)
         
-        let descLabel = UILabel(frame: .zero)
-        descLabel.text = promo.desc
         descLabel.font = .systemFont(ofSize: 15, weight: .regular)
         descLabel.numberOfLines = 0
         
@@ -69,5 +73,14 @@ class DetailVc: UIViewController {
             stack.trailingAnchor.constraint(equalTo: view.layoutMarginsGuide.trailingAnchor, constant: -16),
             stack.topAnchor.constraint(equalTo: imgView.bottomAnchor, constant: 16),
         ])
+    }
+}
+
+extension DetailVc: DetailViewProtocol {
+    internal func setupData(with promo: Promo) {
+        let imgUrl = URL(string: promo.img.url)
+        imgView.kf.setImage(with: imgUrl)
+        titleLabel.text = promo.nama
+        descLabel.text = promo.desc
     }
 }

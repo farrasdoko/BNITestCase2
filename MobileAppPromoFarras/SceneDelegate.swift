@@ -20,8 +20,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let wScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: wScene)
         
-        let client = APIMainClient()
-        window?.rootViewController = UINavigationController(rootViewController: MainVC(client: client))
+//        let client = APIMainClient()
+        window?.rootViewController = UINavigationController(rootViewController: MainRouter.createModule())
         window?.makeKeyAndVisible()
     }
 
