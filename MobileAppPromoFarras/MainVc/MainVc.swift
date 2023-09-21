@@ -11,7 +11,6 @@ class MainVC: UIViewController {
     
     private let tableView = UITableView()
     var promosData: [Promo] = []
-    private let promoCellIdentifier = "PromoCell"
     
     var client: MainClient
     
@@ -43,7 +42,7 @@ class MainVC: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: promoCellIdentifier)
+        tableView.register(PromoCell.self, forCellReuseIdentifier: PromoCell.reuseIdentifier)
         
         view.addSubview(tableView)
         tableView.frame = view.frame
@@ -56,16 +55,16 @@ extension MainVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: promoCellIdentifier)!
+        let cell = tableView.dequeueReusableCell(withIdentifier: PromoCell.reuseIdentifier) as! PromoCell
         
-        var content = cell.defaultContentConfiguration()
-        content.text = promosData[indexPath.row].nama
-        content.secondaryText = promosData[indexPath.row].desc
+        cell.imgBannerView.image = UIImage(named: "promo_bni_point_plus_januari_2021_small_1fb82bf7c6")
         
-        cell.contentConfiguration = content
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        UIScreen.main.bounds.width * (298/825)
     }
 }
