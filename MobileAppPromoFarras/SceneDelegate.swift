@@ -21,7 +21,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(windowScene: wScene)
         
         let client = APIMainClient()
-        window?.rootViewController = MainVC(client: client)
+        window?.rootViewController = UINavigationController(rootViewController: MainVC(client: client))
         window?.makeKeyAndVisible()
     }
 
