@@ -21,16 +21,3 @@ final class DetailVcTests: XCTestCase {
         XCTAssertEqual(promo, detailVc.promo)
     }
 }
-
-class DetailVc: UIViewController {
-    
-    let promo: Promo
-    
-    init(_ promo: Promo) {
-        self.promo = promo
-        super.init(nibName: nil, bundle: nil)
-    }
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-}
